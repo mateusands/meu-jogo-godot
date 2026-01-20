@@ -1,0 +1,12 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1768950118
+icon.svg::CompressedTexture2D::2112998208536917052::1768947858::1768947903::1::::<><><>0<>0<>836673b48ca63d55d26875f4139c1d78<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://levels/::1768950118
+gametilesets_1.png::CompressedTexture2D::1459814291810517773::1768950094::1768950118::1::::<><><>0<>0<>5e825fd9903b20d3a063cf03a356e1e6<>res://.godot/imported/gametilesets_1.png-bc329fb0efecd14739aa8afc5d4653ee.ctex::
+::res://player/::1768948871
+IDLE.png::CompressedTexture2D::4584631328271960978::1768948870::1768948871::1::::<><><>0<>0<>caa7bf51ca0fe53175fddcdd2d417a29<>res://.godot/imported/IDLE.png-684afbf32a7cacbe28071d6e7b42fc6d.ctex::
+JUMP.png::CompressedTexture2D::3756890914123469214::1768948835::1768948835::1::::<><><>0<>0<>edc5fe5687afc7dd73953e153f774397<>res://.godot/imported/JUMP.png-8917d3b0d5f249b36fc8e15a28c67a89.ctex::
+player.tscn::PackedScene::7037005781790512043::1768948758::0::1::::<><><>0<>0<><>::
+RUN.png::CompressedTexture2D::1016099078821970824::1768948835::1768948835::1::::<><><>0<>0<>ba783242c6312af1ba040df61998f158<>res://.godot/imported/RUN.png-36a4bbc46cc42d9df46e1958e66ec1c1.ctex::
+::res://tileset/::1768948362
+gametilesets_1.png::CompressedTexture2D::4662663900861190380::1768948334::1768948362::1::::<><><>0<>0<>895ac08437296bcfc24b1e9edf88645c<>res://.godot/imported/gametilesets_1.png-13e8f5d66ebb73d670b5aae3e990c7f6.ctex::
