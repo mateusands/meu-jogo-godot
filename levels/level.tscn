@@ -297,3 +297,4 @@ tile_set = SubResource("TileSet_cwqvt")
 position = Vector2(126, -102)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
+offset = Vector2(0, -140)
