@@ -11,3 +11,5 @@ Projeto pessoal com foco em:
 ## 🛠️ Tecnologias
 - Godot Engine
 - GDScript
+
+Assets gráficos não estão incluídos por restrição de licença
