@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=4 uid="uid://bogiaihx04wyn"]
+[gd_scene load_steps=18 format=4 uid="uid://bogiaihx04wyn"]
 
 [ext_resource type="Texture2D" uid="uid://u2e6s5htg0kv" path="res://levels/gametilesets_1.png" id="1_80vhd"]
 [ext_resource type="Texture2D" uid="uid://bgc68504ywf8f" path="res://background/Layer_0003_6.png" id="1_cwqvt"]
@@ -12,6 +12,8 @@
 [ext_resource type="Texture2D" uid="uid://cdx7fwuv8aiii" path="res://background/Layer_0002_7.png" id="8_ta7ci"]
 [ext_resource type="AudioStream" uid="uid://b7tcjeknlifp0" path="res://musics sounds/Piano 8.mp3" id="11_pb8y7"]
 [ext_resource type="AudioStream" uid="uid://bn2065mu23u6" path="res://musics sounds/forest ambient.mp3" id="12_hy0rb"]
+[ext_resource type="Texture2D" uid="uid://cj8sy5umcucoo" path="res://levels/Individual Spike.png" id="13_d7v53"]
+[ext_resource type="Script" uid="uid://ci1l1nbnyy87n" path="res://levels/area_2d.gd" id="14_0qmeg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hjsbj"]
 texture = ExtResource("1_80vhd")
@@ -253,6 +255,9 @@ texture = ExtResource("1_80vhd")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_hjsbj")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d7v53"]
+size = Vector2(20, 10)
+
 [node name="Level" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -311,14 +316,27 @@ remote_path = NodePath("../../Camera2D")
 
 [node name="Music_1" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("11_pb8y7")
-volume_db = -5.0
+volume_db = -4.0
 autoplay = true
 mix_target = 1
 parameters/looping = true
 
 [node name="Music_2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("12_hy0rb")
-volume_db = -20.0
+volume_db = -17.0
 autoplay = true
 mix_target = 1
 parameters/looping = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(77, -62)
+texture = ExtResource("13_d7v53")
+
+[node name="Area2D" type="Area2D" parent="Sprite2D" groups=["damage"]]
+position = Vector2(0, 1)
+collision_mask = 3
+script = ExtResource("14_0qmeg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D"]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_d7v53")
