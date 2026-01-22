@@ -20,8 +20,8 @@
 [ext_resource type="AudioStream" uid="uid://cb42h0fb4mr6d" path="res://musics sounds/simple-whoosh.mp3" id="16_32hag"]
 [ext_resource type="AudioStream" uid="uid://y1kp46e4no4h" path="res://musics sounds/dasssss.mp3" id="17_tqiix"]
 [ext_resource type="AudioStream" uid="uid://b3g1g2coasgui" path="res://musics sounds/guard.mp3" id="18_e7oew"]
-[ext_resource type="PackedScene" uid="uid://dicmb8aie7mch" path="res://health_bar.tscn" id="19_c35mf"]
-[ext_resource type="Script" uid="uid://c48s2ugi5pnbh" path="res://health_bar.gd" id="20_65viv"]
+[ext_resource type="PackedScene" uid="uid://dicmb8aie7mch" path="res://hud/health_bar.tscn" id="19_c35mf"]
+[ext_resource type="Script" uid="uid://c48s2ugi5pnbh" path="res://hud/health_bar.gd" id="20_65viv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_r7pn3"]
 atlas = ExtResource("2_qjkh3")
