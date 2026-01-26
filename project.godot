@@ -27,6 +27,8 @@ window/stretch/mode="viewport"
 
 damage=""
 bullet=""
+player=""
+enemy=""
 
 [input]
 
@@ -83,6 +85,7 @@ throw={
 
 2d_physics/layer_1="Ground"
 2d_physics/layer_2="Player"
+2d_physics/layer_4="enemy"
 
 [rendering]
 

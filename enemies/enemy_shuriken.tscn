@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://bghl0vldfpq8y"]
+
+[ext_resource type="Script" uid="uid://d0wlkt2ndxhl0" path="res://enemies/enemybullet.gd" id="1_xdo4m"]
+[ext_resource type="Texture2D" uid="uid://bf7kfhjwqcpq2" path="res://enemies/SHURIKEN.png" id="2_b3yjw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rntwm"]
+atlas = ExtResource("2_b3yjw")
+region = Rect2(0, 0, 8, 8)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ittba"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rntwm")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v5ttt"]
+size = Vector2(6, 6)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_xdo4m")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ittba")
+animation = &"new_animation"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_v5ttt")
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
+rect = Rect2(-3, -3, 6, 6)
